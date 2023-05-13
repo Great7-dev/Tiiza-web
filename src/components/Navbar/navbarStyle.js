@@ -43,4 +43,39 @@ export const NavbarContainer = styled.div`
     cursor: pointer;
     border: none;
   }
+  a {
+    text-decoration: none;
+  }
+  .hide {
+    color: #012454;
+  }
+  .menu {
+    position: relative;
+  }
+`;
+
+export const MenuStyle = styled.div`
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px -2px rgba(33, 33, 33, 0.1),
+    0px 2px 4px -2px rgba(33, 33, 33, 0.06);
+  padding: 2px 5px;
+  width: 125px;
+  height: 70px;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  .red {
+    align-content: center;
+    list-style: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  a {
+    text-decoration: none;
+    color: #000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+  }
 `;

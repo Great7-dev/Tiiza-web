@@ -14,6 +14,8 @@ import Subscription from "./components/Subscription/subscription";
 import Payment from "./components/Payment/payment";
 import Details from "./components/Detail/detail";
 import Allmissitem from "./components/Allmissitem/allmissitem";
+import Founditems from "./components/Founditems/founditems";
+import Help from "./components/Help/help";
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
           <Route path="/payment" element={<Payment />} />
           <Route path="/view-details" element={<Details />} />
           <Route path="/all-missing-items" element={<Allmissitem />} />
+          <Route path="/found-items" element={<Founditems />} />
+          <Route path="/help" element={<Help />} />
         </Routes>
       </Router>
     </div>

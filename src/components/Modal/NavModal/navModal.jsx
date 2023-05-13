@@ -1,6 +1,4 @@
 import React from "react";
-import { NavigationContainer } from "./navigationStyle";
-import Logo from "../../../assets/car.svg";
 import Logo2 from "../../../assets/Vector(3).svg";
 import Logo3 from "../../../assets/Vector(4).svg";
 import Logo4 from "../../../assets/Vector(2).svg";
@@ -8,10 +6,11 @@ import Logo5 from "../../../assets/Vector(5).svg";
 import Logo6 from "../../../assets/Vector(6).svg";
 import Logo7 from "../../../assets/Vector(7).svg";
 import Logo9 from "../../../assets/Vector(9).svg";
+import { NavModalContainer } from "../../Founditems/founditemsStyle";
 
-const Navigation = () => {
+const NavModal = () => {
   return (
-    <NavigationContainer>
+    <NavModalContainer>
       <div className="nav-cont">
         <div className="nav">
           <div className="list-cont">
@@ -59,22 +58,9 @@ const Navigation = () => {
             </div>
           </div>
         </div>
-        <div className="details">
-          <div className="img-cont">
-            <div className="deta-con">
-              <h1 className="detal">Lexus RX33O</h1>
-              <p className="detal">Color: Red</p>
-              <p className="detal">Missing: 3days ago</p>
-              <p className="detal">Last seen: Lekki</p>
-            </div>
-            <div className="imgcontainer">
-              <img src={Logo} alt="logo" className="img" />
-            </div>
-          </div>
-        </div>
       </div>
-    </NavigationContainer>
+    </NavModalContainer>
   );
 };
 
-export default Navigation;
+export default NavModal;

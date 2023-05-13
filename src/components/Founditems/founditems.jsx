@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import Search from "../Dashboard/Search/search";
-import { AllmissitemCont } from "./allmissitemStyle";
+import { FounditemsContainer } from "./founditemsStyle";
 import Logo from "../../assets/car.svg";
-import Latestmiss from "./Latestmissitem/latestmiss";
+import Latestfound from "./Latestfounditem/latestfound";
 import Aweek from "./Aweek/aweek";
 import Twoweeks from "./Twoweeks/twoweeks";
 import Footer from "../Footer/footer";
@@ -10,7 +10,8 @@ import { FiMenu } from "react-icons/fi";
 import { useRecoilState } from "recoil";
 import { NavModalState } from "../../atoms/navMod";
 import NavModal from "../Modal/NavModal/navModal";
-const Allmissitem = () => {
+
+const Founditems = (props) => {
   const [show, setShow] = useRecoilState(NavModalState);
   const ref = useRef();
   useEffect(() => {
@@ -30,8 +31,9 @@ const Allmissitem = () => {
       document.body.style.overflow = "unset";
     };
   }, [show]);
+
   return (
-    <AllmissitemCont>
+    <FounditemsContainer>
       <div className="search-cont" ref={ref}>
         <FiMenu className="menu" onClick={() => setShow(!show)} />
         <Search />
@@ -51,13 +53,13 @@ const Allmissitem = () => {
           </div>
         </div>
       </div>
-      <Latestmiss />
+      <Latestfound />
       <Aweek />
       <Twoweeks />
       <Footer />
       {show && <NavModal />}
-    </AllmissitemCont>
+    </FounditemsContainer>
   );
 };
 
-export default Allmissitem;
+export default Founditems;
