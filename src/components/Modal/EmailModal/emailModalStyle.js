@@ -191,4 +191,41 @@ export const EmailModalContainer = styled.div`
     font-size: 25px;
     color: #012454;
   }
+  .text {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circular-container {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem 0 0 0;
+    background: #c4c4c4;
+  }
+
+  .imginput {
+    border: none;
+    outline: none;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    /* margin-bottom: 5rem; */
+  }
+  .image-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 `;

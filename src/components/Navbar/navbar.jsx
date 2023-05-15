@@ -11,6 +11,7 @@ const Navbar = () => {
   const handleClick = () => {
     setLogOut(true);
   };
+
   return (
     <NavbarContainer>
       <div>

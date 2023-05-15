@@ -68,7 +68,7 @@ export const MenuStyle = styled.div`
   .red {
     align-content: center;
     list-style: none;
-    cursor: pointer;
+    /* cursor: pointer; */
     padding: 5px;
   }
   a {

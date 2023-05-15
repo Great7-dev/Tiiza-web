@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const HelpContainer = styled.div`
   width: 100%;
   background: rgba(217, 217, 217, 0.35);
-  /* height: 100vh; */
   height: fit-content;
   .header {
     display: flex;
