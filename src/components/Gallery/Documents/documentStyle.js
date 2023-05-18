@@ -45,6 +45,7 @@ export const DocumentContainer = styled.div`
   }
   .doctext {
     padding-right: 40%;
+    cursor: pointer;
   }
   .img {
     width: 9%;

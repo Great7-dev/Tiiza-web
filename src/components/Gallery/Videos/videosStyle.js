@@ -45,6 +45,7 @@ export const VidContainer = styled.div`
   }
   .doctext {
     padding-right: 40%;
+    cursor: pointer;
   }
   .img {
     width: 9%;

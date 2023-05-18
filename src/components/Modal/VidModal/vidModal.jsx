@@ -2,9 +2,17 @@ import React, { useState } from "react";
 import InputField from "../../../utils/input";
 import { StyledButton } from "../../Register/registerStyle";
 import { EmailModalContainer } from "../EmailModal/emailModalStyle";
+import { useNavigate } from "react-router-dom";
 
 const VidModal = () => {
   const [imageDataUrls, setImageDataUrls] = useState([]);
+
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    navigate("/videos");
+  };
 
   const handleImageUpload = (event) => {
     const files = Array.from(event.target.files);
@@ -54,7 +62,7 @@ const VidModal = () => {
           <StyledButton
             className="submit-btn"
             type="submit"
-            // onClick={handleSubmit}
+            onClick={handleSubmit}
           >
             Save
           </StyledButton>

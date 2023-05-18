@@ -45,6 +45,7 @@ export const QrContainer = styled.div`
   }
   .doctext {
     padding-right: 50%;
+    cursor: pointer;
   }
   .img {
     width: 10%;

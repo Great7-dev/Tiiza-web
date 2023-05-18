@@ -2,9 +2,16 @@ import React, { useState } from "react";
 import InputField from "../../../utils/input";
 import { StyledButton } from "../../Register/registerStyle";
 import { EmailModalContainer } from "../EmailModal/emailModalStyle";
+import { useNavigate } from "react-router-dom";
 
 const ImgModal = () => {
+  const navigate = useNavigate();
   const [imageDataUrls, setImageDataUrls] = useState([]);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    navigate("/images");
+  };
 
   const handleImageUpload = (event) => {
     const files = Array.from(event.target.files);
@@ -55,7 +62,7 @@ const ImgModal = () => {
           <StyledButton
             className="submit-btn"
             type="submit"
-            // onClick={handleSubmit}
+            onClick={handleSubmit}
           >
             Save
           </StyledButton>

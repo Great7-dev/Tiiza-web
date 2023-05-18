@@ -21,6 +21,7 @@ import Document from "./components/Gallery/Documents/document";
 import Images from "./components/Gallery/Images/images";
 import Qrcode from "./components/Gallery/Qrcode/qrcode";
 import Videos from "./components/Gallery/Videos/videos";
+import Chatscreen from "./components/Chatscreen/chatscreen";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path="/images" element={<Images />} />
           <Route path="/item-tag" element={<Qrcode />} />
           <Route path="/videos" element={<Videos />} />
+          <Route path="/chat" element={<Chatscreen />} />
         </Routes>
       </Router>
     </div>
