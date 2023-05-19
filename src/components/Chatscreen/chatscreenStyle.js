@@ -80,6 +80,7 @@ export const ChatContainer = styled.div`
   .img-cont {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
   }
   .img-cont2 {
     display: flex;

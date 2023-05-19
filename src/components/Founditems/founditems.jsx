@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Search from "../Dashboard/Search/search";
 import { FounditemsContainer } from "./founditemsStyle";
-import Logo from "../../assets/car.svg";
+import Logo from "../../assets/Videos.svg";
 import Latestfound from "./Latestfounditem/latestfound";
 import Aweek from "./Aweek/aweek";
 import Twoweeks from "./Twoweeks/twoweeks";
@@ -42,10 +42,10 @@ const Founditems = (props) => {
         <div className="details">
           <div className="img-cont">
             <div className="details-con">
-              <h1 className="detal">Lexus RX33O</h1>
-              <p className="detal">Color: Red</p>
+              <h1 className="detal">Backpack</h1>
+              <p className="detal">Color: Orange</p>
               <p className="detal">Missing: 3days ago</p>
-              <p className="detal">Last seen: Lekki</p>
+              <p className="detal">Last seen: Sululere</p>
             </div>
             <div className="imgcontainer">
               <img src={Logo} alt="logo" className="img" />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ChatContainer } from "./chatscreenStyle";
 import Logo from "../../assets/Avatar.svg";
 import Discussion from "./Discussion/discussion";
@@ -38,6 +38,7 @@ const Chatscreen = () => {
           <p className="text">Conversation</p>
           <div className="conv-cont">
             {/* <Discussion /> */}
+
             <Messages />
           </div>
         </div>
